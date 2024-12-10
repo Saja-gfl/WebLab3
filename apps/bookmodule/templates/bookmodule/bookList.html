@@ -1,0 +1,33 @@
+{% extends "bookmodule/index.html" %}
+
+{% block title %}Book List{% endblock title %}
+
+{% block content %}
+<h1>Search Results</h1>
+{% if books %}
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Author</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for book in books %}
+            <tr>
+                <td>{{ book.id }}</td>
+                <td>{{ book.title }}</td>
+                <td>{{ book.author }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <p>No results found. Try again with different keywords.</p>
+{% endif %}
+{% for obj in books %}
+    <p>ID: {{ obj.id }}, Title: {{ obj.title }}</p>
+    <hr>
+{% endfor %}
+{% endblock content %}

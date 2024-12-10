@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book List</title>
+</head>
+<body>
+    <h1>Book List</h1>
+    <ul>
+        {% for book in books %}
+            <li>
+                <strong>{{ book.title }}</strong><br>
+                Author: {{ book.author.name }}<br>
+                Genres: 
+                {% for genre in book.genre.all %}
+                    {{ genre.name }}{% if not forloop.last %}, {% endif %}
+                {% endfor %}
+                <br>
+                Published: {{ book.published_date }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

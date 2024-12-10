@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+   <title>{% block title %}Welcome to the Library{% endblock title %}</title>
+   <link rel="icon" href="{% static 'favicon.ico' %}">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   {% block stylesheets %}{% endblock stylesheets %}
+</head>
+
+<body>
+   <div class="topnav">
+      <a class="active" href="{% url 'books.index' %}">Home</a>
+      <a href="{% url 'books.list_books' %}">List Books</a>
+      <a href="{% url 'books.aboutus' %}">About</a>
+      <a href="{% url 'search_page' %}">Search</a>
+   </div>
+   
+   {% block content %}
+   <h1>Welcome to the Library</h1>
+   <p>This is the homepage of our library system.</p>
+   {% endblock content %}
+</body>
+{% comment %} <p>No books match the query.</p> {% endcomment %}
+
+</html>

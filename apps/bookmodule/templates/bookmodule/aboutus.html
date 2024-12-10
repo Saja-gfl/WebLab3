@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+   <title>About Us</title>
+   <link rel="stylesheet" href="{% static 'styles.css' %}">
+   <meta charset="UTF-8">
+</head>
+<body>
+   <div class="topnav">
+      <a href="{% url 'books.index' %}">Home</a>
+      <a href="{% url 'books.list_books' %}">List Books</a>
+      <a class="active" href="{% url 'books.aboutus' %}">About</a>
+   </div>
+   <h1>About Us</h1>
+   <p>Welcome to our library. We aim to inspire and educate readers.</p>
+</body>
+</html>

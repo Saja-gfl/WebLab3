@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;  /* Light background color */
+    color: #333;                /* Dark text color */
+    text-align: center;         /* Center-align text */
+}
+
+#link-section {
+    padding: 20px;
+    background-color: #eeeeee; /* Light grey background */
+}
+
+.custom-link {
+    display: block;                 /* Display links as block elements */
+    color: #3498db;                 /* Blue color for links */
+    text-decoration: none;          /* Remove underline */
+    padding: 10px;                  /* Padding around links */
+    margin-bottom: 10px;            /* Space between links */
+    background-color: #f2f2f2;     /* Light background for links */
+    border-radius: 5px;             /* Rounded corners */
+    transition: all 0.3s ease;      /* Smooth transition for hover/active states */
+}
+
+.custom-link:hover {
+    color: #2ecc71;                 /* Change link color on hover */
+    background-color: #f39c12;      /* Yellow background on hover */
+}
+
+.custom-link:visited {
+    color: #9b59b6;                 /* Purple color for visited links */
+}
+
+.custom-link:active {
+    color: #e74c3c;                 /* Red color for active link */
+    background-color: #8e44ad;      /* Dark background on active state */
+}
+
+/* General table styling */
+.styled-table {
+    border-collapse: collapse; /* Remove double borders */
+    margin: 25px auto; /* Center the table on the page */
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow */
+}
+
+/* Header styling */
+.styled-table thead tr {
+    background-color: #3498db; /* Blue background */
+    color: #ffffff; /* White text */
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Cell styling */
+.styled-table th,
+.styled-table td {
+    border: 1px solid #dddddd; /* Light border */
+    padding: 12px 15px; /* Cell padding */
+    text-align: center;
+}
+
+/* Alternate row colors */
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+/* Hover effect */
+.styled-table tbody tr:hover {
+    background-color: #f1c40f; /* Yellow hover background */
+}
+
+/* Style for the main list */
+.main-list {
+    list-style-type: square; /* Use square bullets */
+    padding: 20px; /* Add padding around the list */
+    background-color: #f9f9f9; /* Light grey background */
+    border: 1px solid #ddd; /* Add a border around the list */
+    border-radius: 5px; /* Rounded corners */
+    width: 50%;
+    margin: 0 auto; /* Center the list on the page */
+}
+
+/* Style for nested lists */
+.nested-list {
+    list-style-type: circle; /* Use circle bullets for nested items */
+    margin-left: 20px; /* Indent nested lists */
+}
+
+/* General list item styling */
+li {
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+/* Styling for the results table */
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px auto;
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.styled-table thead tr {
+    background-color: #3498db;
+    color: #ffffff;
+    text-align: center;
+}
+
+.styled-table th,
+.styled-table td {
+    border: 1px solid #dddddd;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #f1c40f;
+}
+
+
+
+
+h1 {
+    font-size: 2.5rem;
+    color: #3498db; /* Blue color for the heading */
+    text-align: center; /* Center-align the heading */
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+
+

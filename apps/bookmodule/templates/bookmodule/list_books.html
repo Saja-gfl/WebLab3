@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+   <title>List of Books</title>
+   <link rel="stylesheet" href="{% static 'styles.css' %}">
+   <meta charset="UTF-8">
+</head>
+<body>
+   <div class="topnav">
+      <a href="{% url 'books.index' %}">Home</a>
+      <a class="active" href="{% url 'books.list_books' %}">List Books</a>
+      <a href="{% url 'books.aboutus' %}">About</a>
+   </div>
+   <h1>Our Books</h1>
+   <ul>
+      <li><img src="{% static 'book1.jpg' %}" alt="Book 1"> Book Title 1</li>
+      <li><img src="{% static 'book2.jpg' %}" alt="Book 2"> Book Title 2</li>
+      <li><img src="{% static 'book3.jpg' %}" alt="Book 3"> Book Title 3</li>
+   </ul>
+</body>
+</html>
